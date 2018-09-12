@@ -1,3 +1,7 @@
+html{
+  height: 100%;
+  width:100%
+}
 body{
    background: url('background.jpg');
    background-repeat: no-repeat;
@@ -8,12 +12,14 @@ body{
    background-size: 100% cover!important;
    overflow:hidden;
    display: block;
+   height: 100%;
 }
 #main-container-div{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   height: 100%;
+  width: 100%;
 }
 .yellow-button{
     background-color: yellow;
@@ -22,69 +28,29 @@ body{
     padding-right: 5px;
     padding-left:5px;
     color:black;
+    font-family: 'Ubuntu Condensed';
+    font-size: 14px;
+    margin-left: 10px
 }
 .postButtons{
- align-self: center;
-}
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    justify-content: center;
-    align-items: center;
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-input {
-    padding: 10px;
-    outline: none;
-}
-.label-text {
-    font-weight: bold;
-    margin: 10px 0;
-}
-.modal-content{
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%;
-}
-.modal-head {
   display: flex;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.close {
-  display: flex;
-  align-self: flex-end;
-  cursor: pointer;
+textarea{
+  margin-top: 10px;
 }
-.modal-title{
+.create-btn{
+  margin-top: 10px;
+  background-color: green;
+  font-size: 14px;
+  width:100px;
+  color: white;
+  padding: 10px;
   align-self: center;
-}
-.signin-btn {
-    background-color: green;
-    padding: 10px;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.signup{
-  color: blue;
-  font-weight: bolder;
-  margin-left: 10px;
-  cursor: pointer;
+  font-family: Abel;
 }
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
