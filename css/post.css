@@ -21,6 +21,11 @@
 .blogContent{
 
 }
+.postMainLayout{
+    display: flex;
+    flex-direction: row;
+    display:table;
+}
 .postAuthor{
     display:table-cell;
     text-align: left;
@@ -37,7 +42,8 @@
     padding: 5px 10px;
     font-size: 14px;
     display:table-cell;
-    text-align: right;
+    text-align: center;
+    width:70px;
   }
   .postLike{
     color:white;
@@ -57,3 +63,9 @@
     outline: none;
     font-family: Abel;
   }
+  .txtBlog{
+    display:table-cell;
+    overflow: scroll;
+  }
+
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
