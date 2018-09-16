@@ -84,12 +84,16 @@
 
             <!-- Insert code for Edit/Save button and  -->
             <p class="postAuthor">Jimi</p>
-            <button class="postEdit">Edit
-                <i style="font-size: 14px;font-weight: bolder;" class="fa fa-pencil-square-o" aria-hidden="true"></i>
-            </button>
+            <div id="editPost" onclick="toggleEditSave()">
+                    <button class="postEdit" id ="edtPstBtn">Edit
+                            <i style="font-size: 14px;font-weight: bolder;" class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button>
+                    
+            </div>
+            
         </div>
 
-        <div class="blogText">
+        <div class="blogText" id="blogBodyId">
             <p id="blogBody">
                 Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary
                 of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability
@@ -124,12 +128,15 @@
 
 
         <div class="commentPost">
-            <textarea class="commentPost" rows="4" cols="100" placeholder="Leave a comment"></textarea>
+            <textarea id="txtCommentCommentPost" class="commentPost" rows="4" cols="100" placeholder="Leave a comment"></textarea>
         </div>
-        <button class="postLike">Comment
-
-        </button>
-
+        <button class="postLike" onclick="addComment()">Comment</button>
+        <div class="commentSection">
+            <h3>All Comments</h3>
+            <div class="allComments" id="listAllComments">
+                
+            </div>
+        </div>
 
     </div>
 
