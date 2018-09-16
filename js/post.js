@@ -88,12 +88,10 @@ function addComment(){
     document.getElementById("txtCommentCommentPost").innerHTML;
   });
 
-  //var y= document.getElementById("txtCommentCommentPost").innerHTML
+  var x = document.getElementById("txtCommentCommentPost").value;
   
   console.log(x);
-  var pElement = '<p >'+
-  x
-  '</p>';
+  var pElement = '<p >'+ x + '</p>';
   var getDiv = document.getElementById('listAllComments');
-  getDiv.innerHTML+=pElement;
+  getDiv.innerHTML = pElement + getDiv.innerHTML;
 }
